@@ -1,0 +1,58 @@
+.nav-list {
+  position: relative;
+  color: white;
+  list-style: none;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.setting-btn {
+  position: absolute;
+  width: 100%;
+  border-radius: 5px;
+  bottom: 0;
+}
+
+.nav-items {
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.nav-link {
+  padding: 8px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: rgb(154, 152, 152);
+}
+.active {
+  background: #1f1f1f;
+  color: white;
+}
+
+.nav-icons {
+  font-size: 1.4rem;
+}
+
+.nav-link:hover {
+  background: #1f1f1f;
+}
+
+.nav-text {
+  /* color: rgb(154, 152, 152); */
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  /* CSS rules specific to small screens */
+  .nav-text {
+    display: none;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: center;
+  }
+}

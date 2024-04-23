@@ -1,0 +1,113 @@
+.client-container {
+  position: relative;
+  padding: 1rem;
+}
+
+.client-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-add-btn {
+  height: 30px;
+  width: 120px;
+  background-color: rgb(252, 252, 47);
+  border: 2px solid transparent;
+  outline: none;
+  font-weight: bold;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.client-add-btn:hover {
+  border: 2px solid white;
+}
+
+.client-list {
+  margin: 1rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.client-card {
+  position: relative;
+  padding: 1rem;
+  background: #1f1f1f;
+  border-radius: 8px;
+}
+
+.client-pic {
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.client-details {
+  margin-top: 10px;
+}
+
+.client-name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.client-email {
+  /* color: gray; */
+}
+
+.client-address {
+  /* color: gray; */
+}
+
+.add-user-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.479);
+}
+
+.add-user-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-box-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  background-color: #1f1f1f;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.input-feild {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-heading {
+  margin: 0;
+}
+
+.close-icon {
+  font-size: 1rem;
+  padding: 4px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+.btn-margin-top {
+  margin-top: 10px;
+}

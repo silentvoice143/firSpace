@@ -1,0 +1,77 @@
+.main-container {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: white;
+  padding: 10px;
+  width: 20%;
+}
+
+.logo {
+  padding: 8px;
+  margin: 1rem 0;
+  color: yellow;
+  font-size: 1.5rem;
+}
+
+.logout-btn {
+  background: none;
+  outline: none;
+  color: aqua;
+  border: none;
+  padding: 8px;
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logout-icon {
+  font-size: 1.4rem;
+}
+
+.page-container {
+  box-sizing: border-box;
+  color: white;
+
+  padding: 10px 18px;
+  width: 80%;
+  flex-direction: column;
+  position: relative;
+  overflow: auto;
+}
+
+.view-container {
+  height: 90%;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  /* CSS rules specific to small screens */
+  .logo {
+    display: none;
+  }
+
+  .sidebar {
+    width: min-content;
+  }
+
+  .page-container {
+    flex: 1;
+  }
+
+  .logout-btn {
+  }
+
+  .logout-text {
+    display: none;
+  }
+}

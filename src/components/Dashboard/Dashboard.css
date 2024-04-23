@@ -1,0 +1,337 @@
+.dashboard-container {
+  height: 100%;
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+
+.dashboard-left {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-right {
+  flex: 1;
+}
+
+/* ---------revenue container----------  */
+
+.revenue-container {
+  margin-bottom: 1rem;
+}
+.revenue-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.revenue-header-right {
+  display: flex;
+  gap: 10px;
+}
+
+.dropdown-icon {
+  font-size: 1.5rem;
+}
+
+.dropdown-container {
+  cursor: default;
+  display: flex;
+  gap: 6px;
+}
+
+.dropdown-content {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-options {
+  display: none;
+  z-index: 999;
+  position: absolute;
+  top: 50px;
+
+  /* box-shadow: rgb(255 255 255 / 40%) 0px 0px 2px; */
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown-list {
+  list-style: none;
+}
+
+.dropdown-item {
+  padding: 4px 8px;
+}
+
+.dropdown-item:hover {
+  background-color: #484848;
+}
+
+.revenue-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* ______________revenue card style________________ */
+
+.revenue-card {
+  background-color: #1f1f1f;
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+}
+
+.revenue-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.revenue-heading {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.profit-rate {
+  background-color: white;
+  font-size: 14px;
+  color: black;
+  padding: 4px 8px;
+  border-radius: 16px;
+}
+
+.revenue-middle {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+/* -------schedule-container style -------- */
+
+.schedule-container {
+  background: yellow;
+  flex: 1;
+  color: black;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------activity container css ------ */
+
+.activity-container {
+  height: 50%;
+  padding: 0 1rem 1rem 0;
+  position: relative;
+}
+
+.clients-activity {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.clients-activity-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity-card {
+  overflow: auto;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.activity-dropdown {
+  margin-right: 2rem;
+}
+
+.activity-list {
+  flex: 1;
+  overflow: auto;
+}
+
+.activity-list::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar for WebKit browsers */
+}
+
+.activity-card-right {
+  display: flex;
+  align-items: center;
+}
+
+.activity-mid {
+  margin: 0 8px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+.activity-content {
+  font-size: small;
+  margin: 2px 0 0 0;
+}
+
+.activity-time {
+  color: gray;
+  font-weight: 500;
+  font-size: small;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+
+.activity-btn {
+  margin-top: 10px;
+}
+
+.dashbtn-typ1 {
+  border: none;
+  background-color: yellow;
+  outline: none;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  border-radius: 16px;
+}
+
+/* -------- task-progress-container style ------ */
+
+.task-progress-container {
+  padding: 0 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 50%;
+  position: relative;
+  background-color: #1f1f1f;
+  border-radius: 12px;
+}
+
+/*-------------- progressbar css ------------------ */
+
+.progressbar-container {
+  flex: 1;
+}
+
+/* ---------------------------------------- */
+
+.task-contents {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.indicator-color {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+.indicator-text {
+  font-size: small;
+  color: gray;
+  font-weight: bold;
+  margin: 0 6px;
+}
+
+.breakdown-btn {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* CSS rules specific to medium-sized screens */
+
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .dashboard-left {
+    width: 100%;
+  }
+
+  .schedule-container {
+    height: 300px;
+    flex: 0 0 300px;
+  }
+
+  .dashboard-right {
+    display: flex;
+  }
+
+  .activity-container {
+    height: 20rem;
+    flex: 1;
+  }
+
+  .task-progress-container {
+    height: 20rem;
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* CSS rules specific to small screens */
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .dashboard-left {
+    width: 100%;
+  }
+
+  .schedule-container {
+    height: 300px;
+    flex: 0 0 300px;
+  }
+
+  .dashboard-right {
+    display: flex;
+  }
+
+  .activity-container {
+    height: 20rem;
+    flex: 1;
+  }
+
+  .task-progress-container {
+    height: 20rem;
+    flex: 1;
+  }
+
+  .revenue-cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 616px) {
+  .dashboard-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .revenue-header {
+    flex-direction: column;
+  }
+
+  .revenue-header-right {
+    align-self: flex-end;
+  }
+}
